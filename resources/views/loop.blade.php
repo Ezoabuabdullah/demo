@@ -1,5 +1,9 @@
-<h1> car list  </h1>
-@foreach ($cartypes as $cartype)
-    <p>{{$cartype}}</p>
-
-@endforeach
+<h1> while statment </h1>
+@php
+$i = 1;
+@endphp
+ @while($i <=10)
+  <p>Number {{$i}} </p> ;
+  @php $i++  ;
+  @endphp
+@endwhile

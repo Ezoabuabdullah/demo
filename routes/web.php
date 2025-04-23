@@ -15,4 +15,4 @@ Route::get('/loop',function(){
     $cartypes= ['bmw', 'audi','merseds','toyota'];
 
     return view('loop', compact('cartypes'));
-});
+    });
