@@ -1,5 +1,0 @@
-<h1> www</h1>
-<footer>
-    <p> footer </p>
-
-</footer>
