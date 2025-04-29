@@ -3,17 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\product; // تأكد من استخدام اسم النموذج الصحيح
 
 class Productcontroller extends Controller
 {
         public function index (){
-            $x = [
-                ['name' => 'eslam','price'=>1520 ],
-                ['name' => 'ezoo','price'=>1800 ],
-                ['name' => 'ahmed','price'=>1320 ],
-                ['name' => 'ُ ezoo','price'=>1600 ],
-            ]
+            $products = product::all();
+            return view('products.index', compact('products'));
         }
-        return $x ;
-
 }
+
